@@ -51,8 +51,8 @@ let s:Sou_Error = 0
 let s:windows_CFlags = 'gcc\ -fexec-charset=gbk\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
 let s:linux_CFlags = 'gcc\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
 
-let s:windows_CPPFlags = 'g++\ -fexec-charset=gbk\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
-let s:linux_CPPFlags = 'g++\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
+let s:windows_CPPFlags = 'g++\ -fexec-charset=gbk\ -Wall\ -std=c++11\ -g\ -O2\ -c\ %\ -o\ %<.o'
+let s:linux_CPPFlags = 'g++\ -Wall\ -std=c++11\ -g\ -O2\ -c\ %\ -o\ %<.o'
 
 func! Compile()
     exe ":ccl"
